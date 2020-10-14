@@ -21,11 +21,11 @@ main ()
   cout << "\n ============================= \n";
   if (ingresado < 100 || ingresado > 200)
     {
-      resultado = "Se encuentra";
+      resultado = "No se encuentra";
     }
   else
     {
-      resultado = "No se encuentra";
+      resultado = "se encuentra";
     }
   cout << "el numero ingresado " << resultado <<
     " dentro de los limites predeterminados.";
