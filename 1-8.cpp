@@ -1,5 +1,4 @@
-
-
+//comentario//
 #include <iostream>
 
 using namespace std;
@@ -22,6 +21,6 @@ int main()
         
     }while(secuencia>1);
     cout<<secuencia<<"\n";
-
+    
     return 0;
 }
