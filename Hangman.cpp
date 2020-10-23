@@ -48,7 +48,7 @@ int main ()
   //comienzo del juego//BUSCAR LA MANERA DE OBTENER EL LARGO DE PALABRA Y REEMPLAZAR JUGADOR CON TANTOS _ como sea el largo de la plabra
   do  {
       //AQuÍ IRIA EL JUEGO..... SI TUVIERA UNO//
-  } while (intentos<10 || palabra!=jugador);
+  } while (intentos<10 && palabra!=jugador);
   if (palabra==jugador)
   {
       cout<<"========FELICIDADES, HAS GANADO!!==========="<<"\n";
