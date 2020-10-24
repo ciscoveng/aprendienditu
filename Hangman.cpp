@@ -26,7 +26,8 @@ int main ()
       cout<<"seleccione una categoria: \n";
       cout<<"1. frutas \n";
       cout<<"2. animales \n";
-      cout<<"3.instrumentos \n";
+      cout<<"3. instrumentos \n";
+      cout<<"4. ingresar palabra\n";
       cin>>categoria;
       srand(time(NULL));
       random=(rand() % 3);
@@ -41,13 +42,16 @@ int main ()
         case 3:
             palabra=instrumentos[random];       
             break;
-        
+        case 4:
+            cout<<"escriba la palabra que quiera que su amigo adivine y preione enter: \n";
+            cin>>palabra;
+            break;
         default:
         cls();
                 cout<<"\u001b[31mNO INGRESO UNA OPCION CORRECTA. INTENTE DE NUEVO\u001b[37m"<<"\n";
             break;
       }
-  }while (categoria>3);// finaliza el menú y la generacion de la palabra//
+  }while (categoria>4);// finaliza el menú y la generacion de la palabra//
   
   largo=palabra.length();//desde aquí, sse obtiene el largo de la palabra. se carga en el juego y se reemplaza por _
   jugador=palabra;
