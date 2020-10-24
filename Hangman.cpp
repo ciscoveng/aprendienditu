@@ -11,7 +11,8 @@ using namespace std;
 
 int main ()
 {
-    int categoria=0, random=0, intentos=6, largo;
+    string hangman[6]={" +====++\n  |   ||\n  O   ||\n /|\\  ||\n / \\  ||\n      ||\n=========]"," +====++\n  |   ||\n  O   ||\n /|\\  ||\n      ||\n      ||\n=========]","  +====++\n  |    ||\n  O    ||\n       ||\n       ||\n       ||\n=========]","  +====++\n  |    ||\n       ||\n       ||\n       ||\n       ||\n=========]","        \n       ||\n       ||\n       ||\n       ||\n       ||\n=========]"," \n"};
+    int categoria=0, random=0, intentos=5, largo;
     string palabra,jugador;
     char ingreso;
     string frutas[3]={"manzana","kiwi","lulo"};
@@ -57,6 +58,7 @@ int main ()
   //comienzo del juego
   do  {
       cls();
+      cout<<hangman[intentos]<<"\n";
       error=true;//fue laa unica manera que  encontré de poder colocar el contador de errores. taba dificil, we
       cout<<jugador<<"\n";
       cout<<"te quedan: "<<intentos<<" intentos\n";
@@ -80,6 +82,7 @@ int main ()
   }else
   {
       cout<<"\u001b[31m========PERDISTE CACHON, COMO TODO EN TU VIDA========"<<"\n";
+      cout<<hangman[intentos]<<"\n";
   }
   cout<<"la palabra era: "<<palabra;  
     return 0;
