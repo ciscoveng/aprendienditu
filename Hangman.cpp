@@ -15,9 +15,9 @@ int main ()
     int categoria=0, random=0, intentos=5, largo;
     string palabra,jugador;
     char ingreso;
-    string frutas[3]={"manzana","kiwi","lulo"};
-    string animales[3]={"leon","gato","ornitorrinco"};
-    string instrumentos[3]={"guitarra","saxofon","violin"};
+    string frutas[8]={"manzana","kiwi","lulo","pitaya","aguacate","nispero","totumo","guanabana"};
+    string animales[8]={"leon","gato","ornitorrinco","paranguaracutirimicuaro","elefante","socodrilo","ballena","avispa"};
+    string instrumentos[8]={"guitarra","saxofon","violin","xilofono","violoncello","bateria","acordeon","gaita"};
     bool error;
   
   //inicio de la eleccion de categoria y generacion de la plabra, con bucle por si se selecciona una opcion incorrecta//
